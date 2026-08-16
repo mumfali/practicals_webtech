@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Basic Web Page</title>
+</head>
+
+<body>
+
+    <!-- Heading Tags -->
+    <h1>Welcome to My Web Page</h1>
+    <h2>About Me</h2>
+
+    <!-- Paragraph Tag -->
+    <p>Hello! My name is Prachi. I am learning HTML.</p>
+
+    <!-- Text Formatting Tags -->
+    <p>
+        This is <b>Bold</b> text.<br>
+        This is <i>Italic</i> text.<br>
+        This is <u>Underlined</u> text.
+    </p>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- List Tags -->
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Playing Chess</li>
+        <li>Playing Flute</li>
+        <li>Coding</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>My Subjects</h2>
+    <ol>
+        <li>HTML</li>
+        <li>C++</li>
+        <li>Computer Networks</li>
+    </ol>
+
+    <!-- Link Tag -->
+    <p>
+        Visit <a href="https://www.google.com">Google</a>
+    </p>
+
+    <!-- Image Tag -->
+    <img src="image.jpg" alt="Sample Image" width="200">
+
+    <!-- Table -->
+    <h2>Student Details</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Prachi</td>
+            <td>Computer Technology</td>
+            <td>First Year</td>
+        </tr>
+    </table>
+
+</body>
+</html>
