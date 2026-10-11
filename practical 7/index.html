@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#weatherResult {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#weatherResult h2 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+#weatherResult p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="searchButton">Search</button>
+    <div id="weatherResult"></div>
+    <script src="script.js"></script>
+</body>
+</html>
