@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+ssss
+<h2>Registration Form</h2>
+
+<form id="myForm">
+
+    Name:
+    <input type="text" id="name"><br>
+    <span id="e1" style="color:red"></span><br>
+
+    Email:
+    <input type="text" id="email"><br>
+    <span id="e2" style="color:red"></span><br>
+
+    Password:
+    <input type="password" id="password"><br>
+    <span id="e3" style="color:red"></span><br>
+
+    Phone Number:
+    <input type="text" id="phone"><br>
+    <span id="e4" style="color:red"></span><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+<p id="result" style="color:green"></p>
+
+<script>
+document.getElementById("myForm").onsubmit = function(event) {
+
+    event.preventDefault();
+
+    let fields = [
+        document.getElementById("name").value.trim(),
+        document.getElementById("email").value.trim(),
+        document.getElementById("password").value,
+        document.getElementById("phone").value.trim()
+    ];
+
+    let errors = ["e1", "e2", "e3", "e4"];
+
+    let messages = [
+        "Name is required",
+        "Enter a valid email",
+        "Password must have 6 characters",
+        "Enter a valid 10-digit phone number"
+    ];
+
+    let valid = true;
+
+    // Clear old error messages
+    document.getElementById("result").innerHTML = "";
+
+    for (let i = 0; i < 4; i++) {
+        document.getElementById(errors[i]).innerHTML = "";
+    }
+
+    // Validate all fields using loop
+    for (let i = 0; i < 4; i++) {
+
+        if (fields[i] == "") {
+            document.getElementById(errors[i]).innerHTML =
+                messages[i];
+            valid = false;
+        }
+    }
+
+    // Conditional statements
+    if (fields[0] == "") {
+        // Name error already displayed
+    }
+
+    if (fields[1] != "" &&
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields[1])) {
+        document.getElementById("e2").innerHTML =
+            messages[1];
+        valid = false;
+    }
+
+    if (fields[2] != "" && fields[2].length < 6) {
+        document.getElementById("e3").innerHTML =
+            messages[2];
+        valid = false;
+    }
+
+    if (fields[3] != "" && !/^[0-9]{10}$/.test(fields[3])) {
+        document.getElementById("e4").innerHTML =
+            messages[3];
+        valid = false;
+    }
+
+    if (valid) {
+        document.getElementById("result").innerHTML =
+            "Registration Successful!";
+    }
+};
+</script>
+
+</body>
+</html>
