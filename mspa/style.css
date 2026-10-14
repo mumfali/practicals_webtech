@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: linear-gradient(rgba(245, 96, 131, 0.85), rgba(255, 255, 255, 0.85)), 
+                url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80') center fixed;
+    background-size: cover;
+}
+
+.box {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Product info layout with image */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+.danger {
+    background: #dc3545;
+}
+
+.danger:hover {
+    background: #c82333;
+}
